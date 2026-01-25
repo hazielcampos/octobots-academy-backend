@@ -7,6 +7,7 @@ from sqlmodel import Session, select
 from db import get_session
 from models.users import User
 from datetime import timedelta
+
 router = APIRouter(
     prefix="/auth",
     tags=["auth"]

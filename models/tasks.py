@@ -1,9 +1,7 @@
 from datetime import datetime
 from typing import Optional
 from uuid import UUID, uuid4
-
-from sqlmodel import SQLModel, Field, Relationship
-
+from sqlmodel import SQLModel, Field
 
 class Task(SQLModel, table=True):
     __tablename__ = "tasks"

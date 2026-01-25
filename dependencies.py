@@ -9,9 +9,7 @@ oauth2_scheme = OAuth2PasswordBearer(tokenUrl="auth/login")
 
 # --- Dependencies ---
 async def get_current_user(token: str = Depends(oauth2_scheme), db: Session = Depends(get_session)) -> User:
-    print("Token recibido:", token)
     payload = decode_token(token)
-    print("Payload decodificado:", payload)
     username = payload.get("sub")
     if username is None:
         raise HTTPException(status_code=status.HTTP_401_UNAUTHORIZED, detail="Invalid authentication credentials")

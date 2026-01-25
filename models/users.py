@@ -1,11 +1,8 @@
 from datetime import datetime, timezone
-from typing import List, Optional
+from typing import Optional
 from uuid import UUID, uuid4
-
-from sqlmodel import SQLModel, Field, Relationship
-
-def now_utc():
-    return datetime.now(timezone.utc)
+from utils.time import now_utc
+from sqlmodel import SQLModel, Field
 
 class User(SQLModel, table=True):
     __tablename__ = "users"
