@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+
+
+    <title>Task Management API</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+
+<body>
+    <div id="app" class="container">
+        <header>
+            <h1>Task Management</h1>
+        </header>
+        <body>
+            <div id"authentication" class="auth">
+                <h2 class="title-m auth_header">Authentication</h2>
+                <div class="content_auth">
+                    <div class="form_login">
+                        <div class="box_auth">
+                            <h2 class="title-m">Login</h2>
+                            <form action="" class="form" id="loginForm">
+                                <label for="loginUsername">Username:</label>
+                                <input type="text" id="loginUsername" name="username" required>
+
+                                <label for="loginPassword">Password:</label>
+                                <input type="password" id="loginPassword" name="password" required>
+
+                                <button type="submit" id="loginBtn">Login</button>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="form_register">
+                        <div class="box_auth">
+                            <h2 class="title-m">Register</h2>
+                            <form action="" class="form" id="registerForm">
+                                <label for="registerUsername">Username:</label>
+                                <input type="text" id="registerUsername" name="username" required>
+                                <label for="registerEmail">Email:</label>
+                                <input type="email" id="registerEmail" name="email" required>
+                                <label for="registerPassword">Password:</label>
+                                <input type="password" id="registerPassword" name="password" required>
+
+                                <button type="submit" id="registerBtn">Register</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="taskManagement" class="task-management">
+                <h2 class="title-m">Task Management</h2>
+                <div class="task-form">
+                    <h3 class="title-s">Create New Task</h3>
+                    <form id="taskForm">
+                        <label for="title">Title:</label>
+                        <input type="text" id="title" name="title" required>
+
+                        <label for="description">Description:</label>
+                        <textarea id="description" name="description" required></textarea>
+
+                        <button type="submit" id="createTaskBtn">Create Task</button>
+                    </form>
+                </div>
+                <div class="task-list">
+                    <h3 class="title-s">Task List</h3>
+                    <ul id="tasksUl">
+                        <!-- Tasks will be dynamically added here -->
+                    </ul>
+                </div>
+        </body>
+    </div>
+    <script src="./scripts.js"></script>
+</body>
+
+</html>
