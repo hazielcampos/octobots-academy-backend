@@ -14,9 +14,9 @@ async def lifespan(app: FastAPI):
     yield
 
 app = FastAPI(
-    title="Task Management API",
-    description="Clean and scalable FastAPI backend demo",
-    version="1.0.0",
+    title="Octobots Academy API",
+    description="Clean and scalable API for octobots academy",
+    version="0.1.1",
     lifespan=lifespan
 )
 
