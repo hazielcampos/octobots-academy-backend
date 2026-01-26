@@ -1,1 +1,1 @@
-from . import tasks, users
+from . import users, courses, projects, calendar, classes

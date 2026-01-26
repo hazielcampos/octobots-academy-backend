@@ -33,6 +33,16 @@ async def login(response: Response, form_data: OAuth2PasswordRequestForm = Depen
     )
     return {"message": "Login successful"}
 
+@router.post("/logout")
+async def logout(response: Response):
+    response.delete_cookie(
+        key="access_token",
+        httponly=True,
+        samesite="strict",
+        secure=False  # solo HTTPS
+    )
+    return {"message": "Logout successful"}
+
 @router.post("/register", response_model=UserRead)
 async def register(user_create: UserCreate, db: Session = Depends(get_session)):
     statement = select(User).where((User.username == user_create.username) | (User.email == user_create.email))
