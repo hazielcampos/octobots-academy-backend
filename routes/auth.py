@@ -22,12 +22,12 @@ async def login(response: Response, form_data: OAuth2PasswordRequestForm = Depen
             detail="Incorrect username or password",
             headers={"WWW-Authenticate": "Bearer"},
         )
-    access_token = create_access_token(data={"sub": user.username}, expires_delta=timedelta(days=1))
+    access_token = create_access_token(data={"sub": user.username}, expires_delta=timedelta(days=30))
     response.set_cookie(
         key="access_token",
         value=access_token,
         httponly=True,
-        secure=False,  # solo HTTPS
+        secure=True,  # solo HTTPS
         samesite="strict",
         max_age=86400
     )
@@ -39,7 +39,7 @@ async def logout(response: Response):
         key="access_token",
         httponly=True,
         samesite="strict",
-        secure=False  # solo HTTPS
+        secure=True  # solo HTTPS
     )
     return {"message": "Logout successful"}
 
