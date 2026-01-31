@@ -1,0 +1,54 @@
+Date : 2026-01-25 23:16:45
+Directory : /home/hzlrc/Desktop/hzl/web/octobots_backend
+Total : 24 files,  432 codes, 3 comments, 63 blanks, all 498 lines
+
+Languages
++----------+------------+------------+------------+------------+------------+
+| language | files      | code       | comment    | blank      | total      |
++----------+------------+------------+------------+------------+------------+
+| Python   |         24 |        432 |          3 |         63 |        498 |
++----------+------------+------------+------------+------------+------------+
+
+Directories
++------------------------------------------------------------------+------------+------------+------------+------------+------------+
+| path                                                             | files      | code       | comment    | blank      | total      |
++------------------------------------------------------------------+------------+------------+------------+------------+------------+
+| .                                                                |         24 |        432 |          3 |         63 |        498 |
+| . (Files)                                                        |          4 |         67 |          1 |         14 |         82 |
+| auth                                                             |          3 |         36 |          0 |          8 |         44 |
+| models                                                           |          6 |        113 |          0 |         13 |        126 |
+| routes                                                           |          6 |        147 |          2 |         18 |        167 |
+| schemas                                                          |          3 |         65 |          0 |          9 |         74 |
+| utils                                                            |          2 |          4 |          0 |          1 |          5 |
++------------------------------------------------------------------+------------+------------+------------+------------+------------+
+
+Files
++------------------------------------------------------------------+----------+------------+------------+------------+------------+
+| filename                                                         | language | code       | comment    | blank      | total      |
++------------------------------------------------------------------+----------+------------+------------+------------+------------+
+| /home/hzlrc/Desktop/hzl/web/octobots_backend/app.py              | Python   |         23 |          0 |          4 |         27 |
+| /home/hzlrc/Desktop/hzl/web/octobots_backend/auth/__init__.py    | Python   |          1 |          0 |          0 |          1 |
+| /home/hzlrc/Desktop/hzl/web/octobots_backend/auth/security.py    | Python   |          9 |          0 |          1 |         10 |
+| /home/hzlrc/Desktop/hzl/web/octobots_backend/auth/utils.py       | Python   |         26 |          0 |          7 |         33 |
+| /home/hzlrc/Desktop/hzl/web/octobots_backend/db.py               | Python   |         12 |          0 |          3 |         15 |
+| /home/hzlrc/Desktop/hzl/web/octobots_backend/dependencies.py     | Python   |         21 |          1 |          6 |         28 |
+| /home/hzlrc/Desktop/hzl/web/octobots_backend/middlewares.py      | Python   |         11 |          0 |          1 |         12 |
+| /home/hzlrc/Desktop/hzl/web/octobots_backend/models/__init__.py  | Python   |          1 |          0 |          0 |          1 |
+| /home/hzlrc/Desktop/hzl/web/octobots_backend/models/calendar.py  | Python   |         17 |          0 |          2 |         19 |
+| /home/hzlrc/Desktop/hzl/web/octobots_backend/models/classes.py   | Python   |         19 |          0 |          2 |         21 |
+| /home/hzlrc/Desktop/hzl/web/octobots_backend/models/courses.py   | Python   |         35 |          0 |          5 |         40 |
+| /home/hzlrc/Desktop/hzl/web/octobots_backend/models/projects.py  | Python   |         20 |          0 |          2 |         22 |
+| /home/hzlrc/Desktop/hzl/web/octobots_backend/models/users.py     | Python   |         21 |          0 |          2 |         23 |
+| /home/hzlrc/Desktop/hzl/web/octobots_backend/routes/__init__.py  | Python   |          1 |          0 |          0 |          1 |
+| /home/hzlrc/Desktop/hzl/web/octobots_backend/routes/auth.py      | Python   |         59 |          0 |          4 |         63 |
+| /home/hzlrc/Desktop/hzl/web/octobots_backend/routes/classes.py   | Python   |         42 |          0 |          5 |         47 |
+| /home/hzlrc/Desktop/hzl/web/octobots_backend/routes/courses.py   | Python   |          0 |          0 |          1 |          1 |
+| /home/hzlrc/Desktop/hzl/web/octobots_backend/routes/projects.py  | Python   |          0 |          0 |          1 |          1 |
+| /home/hzlrc/Desktop/hzl/web/octobots_backend/routes/user.py      | Python   |         45 |          2 |          7 |         54 |
+| /home/hzlrc/Desktop/hzl/web/octobots_backend/schemas/__init__.py | Python   |          1 |          0 |          0 |          1 |
+| /home/hzlrc/Desktop/hzl/web/octobots_backend/schemas/classes.py  | Python   |         27 |          0 |          3 |         30 |
+| /home/hzlrc/Desktop/hzl/web/octobots_backend/schemas/user.py     | Python   |         37 |          0 |          6 |         43 |
+| /home/hzlrc/Desktop/hzl/web/octobots_backend/utils/__init__.py   | Python   |          1 |          0 |          0 |          1 |
+| /home/hzlrc/Desktop/hzl/web/octobots_backend/utils/time.py       | Python   |          3 |          0 |          1 |          4 |
+| Total                                                            |          |        432 |          3 |         63 |        498 |
++------------------------------------------------------------------+----------+------------+------------+------------+------------+
